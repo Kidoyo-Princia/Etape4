@@ -1,0 +1,19 @@
+
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+$ORIGIN love-kidoyo.local.
+@	IN	SOA	server.love-kidoyo.local. root.love-kidoyo.local. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	server.love-kidoyo.local.
+@       IN      MX      10 mail.love-kidoyo.local.
+
+server	IN	A	10.206.0.189
+mail	IN      A	10.206.0.189
+
